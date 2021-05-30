@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* Universal Selector */
+:root{
+    --violet-color: hsl(257, 40%, 49%);
+    --softmagenta-color: hsl(300, 69%, 71%);
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --gray-color: #e0ddd1;
+    --orange-color: #FF9933;
+    --green-color: #0E4A3E;
+    --lightblue-color: #317E89;
+}
+
+/* This is the reset style */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(./images/bg-desktop.svg);
+}
+/* header Styling */
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 0px 40px; */
+    /* overflow: auto; */
+}
+
+header .navbar{
+    color: #fff;
+    height: 70px;
+    /* padding: 20px 0 20px 0; */
+    background-color: var(--violet-color);
+}
+
+/* Showcace styling */
+
+.showcase{
+    /* height: 600px; */
+    /* padding: 20px 0 20px 0; */
+    background-color: var(--violet-color);
+    background-image: url(./images/bg-desktop.svg);
+    /* position: relative; */  
+}
+
+.flex{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container .header{
+    width: 600px;
+}
+
+.right{
+    margin-top: 7%;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.left{
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.right h2{
+    color: #fff;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.right p{
+    color: lightgray;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-primary{
+    background-color: var(--light-color);
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px black;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: hsl(257, 40%, 49%);
+}
+
+.social{
+    text-align: right;
+    padding-bottom:25px;
+    color: #fff;
+    animation: slideInFromBottom 1s ease-in;
+}
+
+.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  /* Animation Styling */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
